@@ -1,0 +1,20 @@
+{
+  "name": "assemblyscript-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Alen Vlahovljak",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@assemblyscript/loader": "^0.18.11"
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.18.11"
+  },
+  "scripts": {
+    "asbuild:untouched": "asc assembly/index.ts --target debug",
+    "asbuild:optimized": "asc assembly/index.ts --target release",
+    "asbuild": "npm run asbuild:untouched && npm run asbuild:optimized",
+    "test": "node tests"
+  }
+}
