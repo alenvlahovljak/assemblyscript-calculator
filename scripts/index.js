@@ -17,9 +17,9 @@ const runWasmCalculator = async () => {
 
     // Set the results onto the body
     document.querySelector("#add").textContent = `Add: ${a} + ${b} = ${addResult}`;
-    document.querySelector("#subtract").textContent = `Subtract: ${a} + ${b} = ${subtractResult}`;
-    document.querySelector("#multiply").textContent = `Multiply: ${a} + ${b} = ${multiplyResult}`;
-    document.querySelector("#divide").textContent = `Divide: ${a} + ${b} = ${divideResult}`;
+    document.querySelector("#subtract").textContent = `Subtract: ${a} - ${b} = ${subtractResult}`;
+    document.querySelector("#multiply").textContent = `Multiply: ${a} * ${b} = ${multiplyResult}`;
+    document.querySelector("#divide").textContent = `Divide: ${a} / ${b} = ${divideResult}`;
 };
 
 // Run WASM
