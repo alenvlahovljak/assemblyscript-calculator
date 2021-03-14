@@ -6,7 +6,7 @@
 
 ### Build
 
-1. `yarn asbuild` - compile `.wat` files to `.wasm`
+1. `yarn asbuild` - generate `.wat`, `.wasm` and `.wasmp.map` files
 2. `yarn bundle` - bundle with Webpack
 
 ### Start
