@@ -6,15 +6,21 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "@assemblyscript/loader": "^0.18.11"
+    "@assemblyscript/loader": "^0.18.11",
+    "webpack": "^5.25.0",
+    "webpack-cli": "^4.5.0"
   },
   "devDependencies": {
-    "assemblyscript": "^0.18.11"
+    "assemblyscript": "^0.18.11",
+    "source-map-loader": "^2.0.1",
+    "webpack-dev-server": "^3.11.2"
   },
   "scripts": {
     "asbuild:untouched": "asc assembly/index.ts --target debug",
     "asbuild:optimized": "asc assembly/index.ts --target release",
     "asbuild": "npm run asbuild:untouched && npm run asbuild:optimized",
+    "bundle:dev": "webpack",
+    "bundle:dev-server": "webpack serve",
     "test": "node tests"
   }
 }
