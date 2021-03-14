@@ -20,7 +20,7 @@
     "asbuild:optimized": "asc assembly/index.ts --target release",
     "asbuild": "npm run asbuild:untouched && npm run asbuild:optimized",
     "bundle": "webpack",
-    "bundle:server": "webpack serve",
+    "serve": "webpack serve",
     "test": "node tests"
   }
 }
