@@ -19,8 +19,8 @@
     "asbuild:untouched": "asc assembly/index.ts --target debug",
     "asbuild:optimized": "asc assembly/index.ts --target release",
     "asbuild": "npm run asbuild:untouched && npm run asbuild:optimized",
-    "bundle:dev": "webpack",
-    "bundle:dev-server": "webpack serve",
+    "bundle": "webpack",
+    "bundle:server": "webpack serve",
     "test": "node tests"
   }
 }
