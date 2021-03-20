@@ -11,7 +11,7 @@
 
 ### Start
 
-1. `yarn bundle:server` - Start in the browser at port 3000
+1. `yarn serve` - Start in the browser at port 3000
 
 ### Test
 
